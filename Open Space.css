@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+.space {
+    position: relative;
+    top: 10px;
+    background-image: url("space.png");
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    height: 600px;
+}
+.planet-area {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.planet {
+    position: absolute;
+    transform: scale(50%);
+    bottom: -38%;
+    left: -24%;
+    z-index: 2;
+}
+
+.rocket {
+    position: absolute;
+    transform: scale(20%) rotate(30deg);
+    z-index: 1;
+    bottom: 5.5%;
+    left: 3.5%;
+}
+
+.control-panel {
+    position: relative;
+    justify-content: center;
+    align-content: space-around;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    right: 10%;
+    background-color: black;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, yellow 70px);
+    border-radius: 25px;
+}
+
+.control-panel__inner {
+    position: relative;
+    justify-content: center;
+    align-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #1f1e1c;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    margin: 5%;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url("BarlowCondensed-Thin.ttf");
+    font-stretch: normal;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.password-field {
+    top: 30px;
+    width: 60%;
+    background-color: lavender;
+    border: yellow groove;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 5%;
+    color: #1f1e1c;
+}
+
+.ok-button {
+    margin: 5%;
+    top: 30px;
+    background-color: yellow;
+    border: white groove;
+    width: 15%;
+    border-radius: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.check-buttons {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.levers {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input[type="range"] {
+    width: 100%;
+    height: 50px;
+    transform: rotate(-90deg);
+}
+
+.launch-button {
+    top: 20px;
+    bottom: -10px;
+    background-color: red;
+    font-size: 24px;
+    border-radius: 50%;
+    height: 50px;
+    width: 100px;
+    color: white;
+    border: yellow groove;
+}
